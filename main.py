@@ -34,8 +34,19 @@ label_country.grid(row=5, column=0, padx=10, pady=5, sticky="w")
 entry_country = tk.Entry(root, width=40)
 entry_country.grid(row=5, column=1, padx=10, pady=5)
 
+label_dateofbirth = tk.Label(root, text="Data urodzenia:")
+label_dateofbirth.grid(row=6, column=0, padx=10, pady=5, sticky="w")
+entry_dateofbirth = tk.Entry(root, width=40)
+entry_dateofbirth.grid(row=6, column=1, padx=10, pady=5)
+
+
+label_pesel = tk.Label(root, text="Pesel:")
+label_pesel.grid(row=7, column=0, padx=10, pady=5, sticky="w")
+entry_pesel = tk.Entry(root, width=40)
+entry_pesel.grid(row=7, column=1, padx=10, pady=5)
+
 # Przycisk zapisu
 button_save = tk.Button(root, text="Zapisz", command=lambda x:x)
-button_save.grid(row=6, column=0, columnspan=2, pady=10)
+button_save.grid(row=8, column=0, columnspan=2, pady=10)
 # Uruchomienie pętli głównej
 root.mainloop()
