@@ -23,8 +23,19 @@ label_phonenumber = tk.Label(root, text="Numer telefonu:")
 label_phonenumber.grid(row=3, column=0, padx=10, pady=5, sticky="w")
 entry_phonenumber = tk.Entry(root, width=40)
 entry_phonenumber.grid(row=3, column=1, padx=10, pady=5)
+
+label_city = tk.Label(root, text="Miasto:")
+label_city.grid(row=4, column=0, padx=10, pady=5, sticky="w")
+entry_city = tk.Entry(root, width=40)
+entry_city.grid(row=4, column=1, padx=10, pady=5)
+
+label_country = tk.Label(root, text="Kraj:")
+label_country.grid(row=5, column=0, padx=10, pady=5, sticky="w")
+entry_country = tk.Entry(root, width=40)
+entry_country.grid(row=5, column=1, padx=10, pady=5)
+
 # Przycisk zapisu
 button_save = tk.Button(root, text="Zapisz", command=lambda x:x)
-button_save.grid(row=4, column=0, columnspan=2, pady=10)
+button_save.grid(row=6, column=0, columnspan=2, pady=10)
 # Uruchomienie pętli głównej
 root.mainloop()
