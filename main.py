@@ -61,7 +61,7 @@ entry_foreign_language = tk.Entry(root, width=40)
 entry_foreign_language.grid(row=10, column=1, padx=10, pady=5)
 
 # Przycisk zapisu
-button_save = tk.Button(root, text="!!! Zapisz !!!", command=lambda x:x, )
-button_save.grid(row=11, column=0, columnspan=2, pady=10)
+button_save = tk.Button(root, text="Zapisz", command=lambda x:x, )
+button_save.grid(row=14, column=0, columnspan=2, pady=10)
 # Uruchomienie pętli głównej
 root.mainloop()
