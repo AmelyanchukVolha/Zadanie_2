@@ -66,8 +66,13 @@ label_voluntary_preference.grid(row=11, column=0, padx=10, pady=5, sticky="w")
 entry_voluntary_preference = tk.Entry(root, width=40)
 entry_voluntary_preference.grid(row=11, column=1, padx=10, pady=5)
 
+label_driving_license = tk.Label(root, text="Czy posiadasz prawo jazdy:")
+label_driving_license.grid(row=12, column=0, padx=10, pady=5, sticky="w")
+entry_driving_license = tk.Entry(root, width=40)
+entry_driving_license.grid(row=12, column=1, padx=10, pady=5)
+
 # Przycisk zapisu
-button_save = tk.Button(root, text="!!! Zapisz !!!", command=lambda x:x, )
+button_save = tk.Button(root, text="Zapisz", command=lambda x:x, )
 button_save.grid(row=14, column=0, columnspan=2, pady=10)
 # Uruchomienie pętli głównej
 root.mainloop()
