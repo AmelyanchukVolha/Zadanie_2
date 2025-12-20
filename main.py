@@ -91,7 +91,7 @@ entry_tshirt_size.grid(row=15, column=1, padx=10, pady=5)
 
 
 # Przycisk zapisu
-button_save = tk.Button(root, text="Zapisz", command=lambda x:x, )
+button_save = tk.Button(root, text="##Zapisz##", command=lambda x:x, )
 button_save.grid(row=16, column=0, columnspan=2, pady=10)
 # Uruchomienie pętli głównej
 root.mainloop()
