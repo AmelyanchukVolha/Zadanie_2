@@ -71,8 +71,27 @@ label_driving_license.grid(row=12, column=0, padx=10, pady=5, sticky="w")
 entry_driving_license = tk.Entry(root, width=40)
 entry_driving_license.grid(row=12, column=1, padx=10, pady=5)
 
+label_time_available = tk.Label(root, text="Dostępność czasowa:")
+label_time_available.grid(row=13, column=0, padx=10, pady=5, sticky="w")
+entry_time_available = tk.Entry(root, width=40)
+entry_time_available.grid(row=13, column=1, padx=10, pady=5)
+
+label_accomodation = tk.Label(root, text="Czy potrzebujesz zakwaterowania?:")
+label_accomodation.grid(row=14, column=0, padx=10, pady=5, sticky="w")
+entry_accomodation = tk.Entry(root, width=40)
+entry_accomodation.grid(row=14, column=1, padx=10, pady=5)
+
+label_tshirt_size = tk.Label(root, text="Rozmiar koszulki?:")
+label_tshirt_size.grid(row=15, column=0, padx=10, pady=5, sticky="w")
+entry_tshirt_size = tk.Entry(root, width=40)
+entry_tshirt_size.grid(row=15, column=1, padx=10, pady=5)
+
+
+
+
+
 # Przycisk zapisu
 button_save = tk.Button(root, text="Zapisz", command=lambda x:x, )
-button_save.grid(row=14, column=0, columnspan=2, pady=10)
+button_save.grid(row=16, column=0, columnspan=2, pady=10)
 # Uruchomienie pętli głównej
 root.mainloop()
